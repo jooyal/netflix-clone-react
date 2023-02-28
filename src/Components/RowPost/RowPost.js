@@ -36,14 +36,14 @@ function RowPost(props) {
         .catch((err)=>{
             console.log(err);
         })
-    }, [])
+    }, [props.url])
 
     const opts = {
         width: '100%',
         
         playerVars: {
           // https://developers.google.com/youtube/player_parameters
-          autoplay: 0,
+          autoplay: 1,
         }
       };
 
@@ -58,8 +58,8 @@ function RowPost(props) {
                         </div>
             })}
         </div>
-        {displayVideo && (<div id='videoDisplayDiv' className="video-display">
-            <div class="video-card">
+        {displayVideo && (<div className="video-display">
+            <div className="video-card">
                 <button className='video-close-button' onClick={()=>{setDisplayVideo(false)}}> <b>X</b> </button>
                 <YouTube opts={opts} videoId={videoId}/>
             </div>

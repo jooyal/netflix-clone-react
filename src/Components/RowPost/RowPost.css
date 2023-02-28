@@ -17,11 +17,23 @@
 .row-poster {
     max-height: 200px;
     margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.row-poster:hover {
+  transform: scale(1.06);
 }
 
 .row-poster-small {
   max-height: 150px;
   margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.row-poster-small:hover {
+  transform: scale(1.06);
 }
 
 .video-display {
@@ -37,6 +49,10 @@
   backdrop-filter: blur(10px);
   z-index: 9999;
   transition: all .3s ease-in-out;
+}
+
+.video-card {
+  width: 60%;
 }
 
 .video-close-button {
