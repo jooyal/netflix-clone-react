@@ -52,7 +52,7 @@ function RowPost(props) {
         <h2>{props.title}</h2>
         <div className="row-posters-container">
             {movies.map((obj, index)=>{
-                return <div key={index}>
+                return <div key={index} className="row-poster-container">
                             <img onClick={()=>handleImageClick(obj.id)} className={props.isSmall ? 'row-poster-small' : 'row-poster'} src={imageBaseUrl +'/w500'+ (obj.backdrop_path ? obj.backdrop_path : obj.poster_path)} alt="Poster" />
                             <p style={{maxWidth:'80%'}}>{obj.title ? obj.title : (obj.name ? obj.name : '')}</p>
                         </div>

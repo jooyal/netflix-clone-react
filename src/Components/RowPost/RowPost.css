@@ -18,21 +18,23 @@
     max-height: 200px;
     margin-right: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
-.row-poster:hover {
+/* .row-poster:hover {
   transform: scale(1.06);
-}
+} */
 
 .row-poster-small {
   max-height: 150px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.row-poster-container {
   transition: transform 0.3s ease;
 }
 
-.row-poster-small:hover {
+.row-poster-container:hover {
   transform: scale(1.06);
 }
 
